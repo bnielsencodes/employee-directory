@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ------------- STYLESHEETS --------------- -->
+    <!-- ------------- MAIN STYLESHEET --------------- -->
     <link rel="stylesheet" href="css/normalize.css" />
+    <!-- ------------- NORMALIZE.CSS STYLESHEET --------------- -->
     <link rel="stylesheet" href="css/styles.css" />
-
     <!-- ------------- GOOGLE FONTS --------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,11 +18,12 @@
   </head>
 
   <body>
+    <!-- ------------- PAGE TITLE HEADER --------------- -->
     <header>
       <h1 class="page-title">AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
     </header>
-
     <main class="grid-container">
+      <!-- ------------- EMPLOYEE CARDS --------------- -->
       <div class="card">
         <img class="avatar" src="img/57.jpeg" />
         <div class="text-container">
@@ -119,9 +120,9 @@
           <p class="address">Chicago</p>
         </div>
       </div>
-      <!-- add 11 copies here -->
     </main>
 
+    <!-- ------------- MODAL OVERLAY --------------- -->
     <div class="overlay hidden">
       <div class="modal">
         <button class="modal-close">X</button>
@@ -140,5 +141,8 @@
         </div>
       </div>
     </div>
+
+    <!-- ------------- JAVASCRIPT --------------- -->
+    <script src="js/app.js"></script>
   </body>
 </html>
