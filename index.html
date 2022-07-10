@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- ------------- MAIN STYLESHEET --------------- -->
   <link rel="stylesheet" href="css/normalize.css" />
   <!-- ------------- NORMALIZE.CSS STYLESHEET --------------- -->
@@ -17,10 +18,14 @@
 
 <body>
   <!-- ------------- PAGE TITLE HEADER --------------- -->
-  <header>
-    <h1 class="page-title">AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
+  <header class="header-wrapper">
+    <div class="title-container">
+      <h1 class="page-title">AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
+    </div>
+    <form class="search-wrapper" action="index.html" method="post">
+      <input type="search" name="search" id="search" onkeyup="searchUsers()" placeholder="Filter by name" />
+    </form>
   </header>
-
 
 
   <main class="grid-container">
