@@ -1,4 +1,9 @@
-// global variables
+/* ----------------------
+-------------------------
+GLOBAL VARIABLES
+-------------------------
+---------------------- */
+
 let employees = [];
 const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
 email, location, phone, dob &noinfo &nat=US`;
@@ -8,7 +13,11 @@ const modalContainer = document.querySelector('.modal-content');
 const modalClose = document.querySelector('.modal-close');
 
 
-/* --------------- FETCH AND DISPLAY EMPLOYEE DATA ----------------- */
+/* ----------------------
+-------------------------
+FETCH AND DISPLAY EMPLOYEE DATA
+-------------------------
+---------------------- */
 
 // fetch data from API
 fetch(urlAPI)
@@ -93,14 +102,22 @@ gridContainer.addEventListener('click', (e) => {
 });
 
 
-/* --------------- CLOSE MODAL ON CLOSE BUTTON CLICK EVENT ----------------- */
+/* ----------------------
+-------------------------
+CLOSE MODAL ON CLOSE BUTTON CLICK EVENT
+-------------------------
+---------------------- */
 
 modalClose.addEventListener('click', () => {
   overlay.classList.add('hidden');
 });
 
 
-/* --------------- CLOSE MODAL ON OVERLAY CLICK EVENT ----------------- */
+/* ----------------------
+-------------------------
+CLOSE MODAL ON OVERLAY CLICK EVENT
+------------------------
+---------------------- */
 
 overlay.addEventListener("click", (e) => {
   if (e.target === overlay) {
@@ -109,7 +126,11 @@ overlay.addEventListener("click", (e) => {
 });
 
 
-/* --------------- EMPLOYEE FILTER ----------------- */
+/* ----------------------
+-------------------------
+EMPLOYEE FILTER 
+-------------------------
+---------------------- */
 
 function searchUsers() {
   let input = document.getElementById('search').value;
@@ -123,7 +144,3 @@ function searchUsers() {
       card[i].style.display = "";
     }
   }
-}
-
-
-/* --------------- GO BACK AND FORTH BETWEEN EMPLOYEE DETAILS IN MODAL ----------------- */
