@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ------------- MAIN STYLESHEET --------------- -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- ------------- NORMALIZE.CSS STYLESHEET --------------- -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- ------------- GOOGLE FONTS --------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg" sizes="32x32" href="favicon.ico" />
+    <title>Awesome Startup Employee Directory</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- ------------- MAIN STYLESHEET --------------- -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <!-- ------------- NORMALIZE.CSS STYLESHEET --------------- -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- ------------- GOOGLE FONTS --------------- -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-  <title>Awesome Startup Employee Directory</title>
-</head>
-
-<body>
-  <!-- -----------------------
+  <body>
+    <!-- -----------------------
   ----------------------------
   PAGE TITLE HEADER
   ----------------------------
   ------------------------ -->
-  <header class="header-wrapper">
-    <div class="title-container">
-      <h1 class="page-title">AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
-    </div>
-    <form class="search-wrapper" action="index.html" method="post">
-      <input type="search" name="search" id="search" onkeyup="searchUsers()" placeholder="Filter by name" />
-    </form>
-  </header>
+    <header class="header-wrapper">
+      <div class="title-container">
+        <h1 class="page-title">AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
+      </div>
+      <form class="search-wrapper" action="index.html" method="post">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          onkeyup="searchUsers()"
+          placeholder="Filter by name"
+        />
+      </form>
+    </header>
 
-
-  <main class="grid-container">
-    <!-- -----------------------
+    <main class="grid-container">
+      <!-- -----------------------
     ----------------------------
     EMPLOYEE CARDS
     ----------------------------
     ------------------------ -->
-  </main>
+    </main>
 
-  <!-- -----------------------
+    <!-- -----------------------
   ----------------------------
   MODAL OVERLAY
   ----------------------------
   ------------------------ -->
-  <div class="overlay hidden">
-    <div class="modal">
-      <button class="modal-close">X</button>
-      <div class="modal-content">
-        <!-- modal information will be added with JS here -->
+    <div class="overlay hidden">
+      <div class="modal">
+        <button class="modal-close">X</button>
+        <div class="modal-content">
+          <!-- modal information will be added with JS here -->
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- -----------------------
+    <!-- -----------------------
   ----------------------------
   JAVASCRIPT
   ----------------------------
   ------------------------ -->
-  <script src="js/app.js"></script>
-</body>
-
+    <script src="js/app.js"></script>
+  </body>
 </html>
